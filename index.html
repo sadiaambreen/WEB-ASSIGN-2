@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="https://img.freepik.com/free-vector/hand-drawn-camera-photography-logo-icon-design-template_9640-512.jpg?w=740"
+            height="50"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#slider">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutUs">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#collections">Collections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#registration">Member Registration Form</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#contactUs">Contact Us</a>
+            </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+  
+        <!-- Notifications -->
+        <div class="dropdown">
+          <a
+            class="text-reset me-3 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+              class="rounded-circle"
+              height="25"
+              alt="Black and White Portrait of a Man"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <!-- Slider -->
+  <section id="slider">
+    <div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="assets/img/slider 1.jpg" />  
+            <div class="content">Lorem ipsum dolor sit amet</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="assets/img/slider 2.jpg"/>  
+            <div class="content">Lorem ipsum dolor sit amet</div>  
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="assets/img/slider 3.jpg"/>  
+            <div class="content">Lorem ipsum dolor sit amet</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="assets/img/slider 4.jpg"/>  
+            <div class="content">Lorem ipsum dolor sit amet</div>  
+        </div>  
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div> 
+  </section>
+  <section class="about" id="aboutUs">
+    <div class="aboutUs">
+      <h1
+        style="
+          font-size: 22;
+          margin-bottom: 5px;
+          text-align: center;
+          padding-top: 20px;
+        "
+      >
+        About Us
+      </h1>
+      <div class="row g-0 bg-light position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="assets/img/pic 10.jpg" class="w-100" alt="..." />
+        </div>
+        <div class="col-md-6 p-4 ps-md-0 aboutInfo">
+          <h5
+            class="mt-0"
+            style="
+              font-size: 20pt;
+              margin-bottom: 5px;
+              text-align: center;
+              padding-top: 20px;
+            "
+          >
+            Why US!
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Inventore error sunt fuga accusantium qui similique deserunt
+            laboriosam consequuntur. Temporibus officia facilis quaerat
+            aliquid molestiae perferendis iusto nam vero nihil maiores?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Inventore error sunt fuga accusantium qui similique deserunt
+            laboriosam consequuntur. Temporibus officia facilis quaerat
+            aliquid molestiae perferendis iusto nam vero nihil maiores?
+          </p>
+          <a href="#" class="stretched-link"><button>Learn More</button> </a>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="gallery">
+    <h1
+    style="
+      font-size: 22;
+      margin-bottom: 5px;
+      text-align: center;
+      padding-top: 20px;
+    "
+  >
+    Gallery
+  </h1>
+    <!-- Gallery -->
+<div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Yosemite National Park"
+      />
+    </div>
+  </div>
+  <!-- Gallery -->
+</section>
+<!-- Collection -->
+<section id="collections">
+    <h1
+        style="
+          font-size: 22;
+          margin-bottom: 5px;
+          text-align: center;
+          padding-top: 20px;
+        "
+      >
+        Our Collections
+      </h1>
+    <!-- Carousel wrapper -->
+<div
+id="carouselMultiItemExample"
+class="carousel slide carousel-dark text-center"
+data-mdb-ride="carousel"
+>
+<!-- Controls -->
+
+<!-- Inner -->
+<div class="carousel-inner py-4">
+  <!-- Single item -->
+  <div class="carousel-item active">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp"
+              class="card-img-top"
+              alt="Waterfall"
+            />
+            <div class="card-body">
+              <h5 class="card-title">NATURE</h5>
+              <p class="card-text">
+                Nature photography is a wide range of photography taken outdoors and devoted to displaying natural elements such as landscapes, wildlife, plants, and close-ups of natural scenes and textures.
+              </p>
+              <a href="#!" class="btn btn-primary">MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
+              class="card-img-top"
+              alt="Sunset Over the Sea"
+            />
+            <div class="card-body">
+              <h5 class="card-title">AESTHETIC</h5>
+              <p class="card-text">
+                Aesthetics, on the other hand, goes a little further than technical aspects. Aesthetics in photography refers to patterns in a photographer's use of visual elements to create beautiful images.
+              </p>
+              <a href="#!" class="btn btn-primary">MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp"
+              class="card-img-top"
+              alt="Sunset over the Sea"
+            />
+            <div class="card-body">
+              <h5 class="card-title">PORTRAIT</h5>
+              <p class="card-text">
+                Portrait photography, or portraiture, is a type of photography aimed toward capturing the personality of a person or group of people by using effective lighting, backdrops, and poses.
+              </p>
+              <a href="#!" class="btn btn-primary">MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+              class="card-img-top"
+              alt="Fissure in Sandstone"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora odio autem deleniti dolores corporis at magnam eveniet consequatur excepturi sit. Nemo rem quae eos excepturi necessitatibus. Eius dolorum deserunt quam.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
+              class="card-img-top"
+              alt="Storm Clouds"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora odio autem deleniti dolores corporis at magnam eveniet consequatur excepturi sit. Nemo rem quae eos excepturi necessitatibus. Eius dolorum deserunt quam.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
+              class="card-img-top"
+              alt="Hot Air Balloons"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora odio autem deleniti dolores corporis at magnam eveniet consequatur excepturi sit. Nemo rem quae eos excepturi necessitatibus. Eius dolorum deserunt quam.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
+              class="card-img-top"
+              alt="Peaks Against the Starry Sky"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora odio autem deleniti dolores corporis at magnam eveniet consequatur excepturi sit. Nemo rem quae eos excepturi necessitatibus. Eius dolorum deserunt quam.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
+              class="card-img-top"
+              alt="Bridge Over Water"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora odio autem deleniti dolores corporis at magnam eveniet consequatur excepturi sit. Nemo rem quae eos excepturi necessitatibus. Eius dolorum deserunt quam.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+          <div class="card">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
+              class="card-img-top"
+              alt="Purbeck Heritage Coast"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora odio autem deleniti dolores corporis at magnam eveniet consequatur excepturi sit. Nemo rem quae eos excepturi necessitatibus. Eius dolorum deserunt quam.
+              </p>
+              <a href="#!" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-flex justify-content-center mb-4">
+    <button
+      class="carousel-control-prev position-relative"
+      type="button"
+      data-mdb-target="#carouselMultiItemExample"
+      data-mdb-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next position-relative"
+      type="button"
+      data-mdb-target="#carouselMultiItemExample"
+      data-mdb-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!-- Inner -->
+</div>
+<!-- Carousel wrapper -->
+</section>
+<!-- Hire Me  -->
+<center>
+    <section
+      class="registration"
+      id="registration"
+      style="background-color: #808080"
+    >
+      <h3
+        style="
+          font-size: 22;
+          margin-bottom: 5px;
+          text-align: center;
+          padding-top: 20px;
+        "
+      >
+        Members Registration Form
+      </h3>
+
+      <div class="containerRegistration">
+        <div class="header">
+          <h2>Create an Account</h2>
+        </div>
+        <form class="form" id="form">
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your Username"
+            />
+            <i
+              class="fa fa-smile-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <i
+              class="fa fa-frown-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <p class="errorMessage">Error Message</p>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email" />
+            <i
+              class="fa fa-smile-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <i
+              class="fa fa-frown-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <p class="errorMessage">Error Message</p>
+          </div>
+          <div class="form-control">
+            <label for="phone">Phone Number</label>
+            <input
+              type="phone"
+              id="phone"
+              placeholder="Enter your Phone Number"
+            />
+            <i
+              class="fa fa-smile-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <i
+              class="fa fa-frown-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <p class="errorMessage">Error Message</p>
+          </div>
+
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your Password"
+            />
+            <i
+              class="fa fa-smile-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <i
+              class="fa fa-frown-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <p class="errorMessage">Error Message</p>
+          </div>
+
+          <div class="form-control">
+            <label for="password2">Confirm Password</label>
+            <input
+              type="password"
+              id="password2"
+              placeholder="Confirm your Password"
+            />
+            <i
+              class="fa fa-smile-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <i
+              class="fa fa-frown-o"
+              style="padding-top: 15px; padding-right: 15px"
+            ></i>
+            <p class="errorMessage">Error Message</p>
+          </div>
+
+          <button>Submit</button>
+        </form>
+
+        <div class="complete-modal">
+          <h2>Successful!</h2>
+        </div>
+      </div>
+    </section>
+  </center>
+  <section id="reviews">
+    <div class="spacer2"></div>
+    <center>
+    
+    <div class="spacer"></div>
+    
+    
+    <div class="sd_master_wrapper">	
+        <div class="sdtestBg2"></div>
+        <div class="sdtestBg3"></div>
+        <div class="slideshow">
+            
+            <div class="content"> <!-- slide 1 -->
+                <div class="thumbnail">
+                    <img src="assets/img/pic 14.jpg"> 
+                </div>
+                <div class="btnNtxt"> 
+                    <div class="sdAllContent"> 
+                        
+                        <div class="sd_scroll">
+                        <h1 class="sdCustomSliderHeadig">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde pariatur cum, quas ipsum aspernatur beatae accusamus laudantium eos quis quidem officia molestias nostrum non nesciunt, totam odio qui atque harum.</h1> 
+                        </div>
+                        <p class="SdClientName">Vice President</p>
+                        <p class="SdClientDesc">Lorem</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>	
+    <div class="spacer"></div>
+  </section>
+  <section id="contactUs">
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+        </div>
+        <form method="post">
+            <h3>Drop Us a Message</h3>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
+  </section>
+</body>
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/app.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+</html>

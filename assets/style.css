@@ -1,0 +1,490 @@
+body {
+  margin: 0;
+  background: #e6e6e6;
+}
+.showSlide {
+  display: none;
+}
+.showSlide img {
+  width: 100%;
+}
+.slidercontainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.left,
+.right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.left:hover,
+.right:hover {
+  background-color: rgba(115, 115, 115, 0.8);
+}
+.content {
+  color: #eff5d4;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*  */
+/* Registrations */
+.registrations{
+    background-color:#d9d9d9;
+    color: black;
+    padding: 2px;
+}
+.registrations h1{
+    font-size: 32pt;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.containerRegistration {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+    /* box-shadow: 0 0 10px 1px rgba(61, 61, 61, 0.19), 0 0 15px 1px rgba(63, 63, 63, 0.23); */
+}
+
+.containerRegistration.complete {
+    visibility: hidden;
+}
+
+.containerRegistration .header {
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-control label {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.form-control input {
+    margin-top: 2px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid blueviolet;
+    font-family: inherit;
+}
+
+.form-control i {
+    position: absolute;
+    top: 29px;
+    right: 10px;
+    font-size: 24px;
+    visibility: hidden;
+}
+
+.form-control input:focus {
+    outline: none;
+}
+
+.form-control.success input {
+    border: 2px solid green;
+}
+
+.form-control.success .fa-smile-o {
+    color: green;
+    visibility: visible;
+}
+
+
+/* Animation code to move form fields */
+@keyframes inputMove {
+    0% {
+        transform: translateX(5px);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* Adding the animation properties to the error CSS selector */
+.form-control.error input {
+    border: 2px solid red;
+    animation-name: inputMove;
+    animation-duration: .5s;
+    /* animation-iteration-count: 3; */
+}
+
+.form-control.error .fa-frown-o {
+    color: red;
+    visibility: visible;
+}
+
+.container.complete .fa {
+    visibility: hidden;
+}
+
+
+/* .container.error {
+    animation-name: inputMove;
+    animation-duration: .5s;
+} */
+
+.form-control .errorMessage {
+    visibility: hidden;
+    margin: 2px 0 12px 0;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.form-control.error .errorMessage {
+    visibility: visible;
+    color: red;
+}
+
+button {
+    font-family: inherit;
+    width: 100%;
+    padding: 10px;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 2px solid blueviolet;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    background: transparent;
+}
+
+.complete-modal {
+    visibility: hidden;
+    position: fixed;
+    top: 45%;
+    left: 41%;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 0 10px 1px rgba(61, 61, 61, 0.19), 0 0 15px 1px rgba(63, 63, 63, 0.23);
+    color: green;
+    text-align: center;
+}
+
+.container.complete .complete-modal {
+    visibility: visible;
+}
+.spacer{
+    height:150px;
+    width:100%;
+  }
+  .spacer2{
+    height:20px;
+    width:100%;
+  }
+  /* spacer ends */
+  
+  /* slider styles */
+  .sd_master_wrapper{
+      position: relative;	
+      max-width:900px;
+      margin:0 auto;
+      padding:0;
+      border-radius:10px;
+      z-index:9999;
+  }
+  .sdtestBg3{
+      height: 100%;
+      width: 80%;
+      background: #fff;
+      position: absolute;
+      bottom: -40px;
+      left: 10%;
+      border-radius: 20px;
+      box-shadow: 0px 18px 52.8537px rgb(215 228 249 / 50%);
+      z-index:1;
+  }
+  .sdtestBg2{
+      height: 100%;
+      width: 90%;
+      background: #fff;
+      position: absolute;
+      bottom: -22px;
+      left: 5%;
+      border-radius: 20px;
+      box-shadow: 0px 18px 52.8537px rgb(215 228 249 / 50%);
+      z-index:2;
+  }
+  
+  .sd_scroll {
+      height: auto;
+      max-height: 180px;
+      overflow: auto;
+  }
+      
+  .slideshow {
+      position: relative;
+      min-height: 300px;
+      height: auto;
+      background: #fff;
+      box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+      border-radius: 20px;
+      background-image: url(https://farsighttechnologies.com/wp-content/uploads/2021/03/quote1.png), url(https://farsighttechnologies.com/wp-content/uploads/2021/03/quote.png);
+      background-position: top 15px left 15px, bottom 40% right 15px;
+      background-repeat: no-repeat;
+      background-size: 180px, 180px;
+      z-index:3;
+  }
+  button.slick-prev.slick-arrow {
+      position: absolute;
+      z-index: 9999;
+      bottom: -80px;
+      right: 160px;
+      background: transparent;
+      color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      height: 15px;
+      width: 30px;
+      padding: 0;
+      background-image: url(https://farsighttechnologies.com/wp-content/uploads/2021/03/left-icon.png);
+      background-size: 100% 100%;
+  }
+  button.slick-next.slick-arrow {
+      position: absolute;
+      bottom: -82px;
+      right: 105px;
+      background: transparent;
+      color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      outline: none;
+      height: 18px;
+      width: 40px;
+      background-image: url(https://farsighttechnologies.com/wp-content/uploads/2021/03/right-icon.png);
+      background-size: 100% 100%;
+  }
+  .pagingInfo {
+      position: absolute;
+      bottom: 0;
+      z-index: 999;
+  }
+  .sdCustomSliderHeadig {
+      color: #94A2B3;
+      font-family: "Poppins", Sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.6em;
+      text-align: center;
+  }
+  .sdCustomSliderBtn{
+      display: inline-block;
+      text-decoration: none;
+      font-family: montserrat;
+      background: #E31C3A;
+      color: #fff;
+      padding: 12px 25px;
+      margin-top: 30px;
+      border-radius: 4px;
+      outline: none;
+      font-size: 14px;
+      font-weight: 500;
+  }
+  .sdAllContent{
+      width:75%;
+      margin:auto;
+  }
+  .thumbnail img {
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 15px;
+  }
+  .content{
+      display:block !important;
+      padding: 5px;
+  }
+  .SdClientName {
+      text-align: center;
+      color: #272D4E;
+      font-family: "Poppins", Sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.4em;
+      margin-top: 15px;
+  }
+  .SdClientDesc {
+      text-align: center;
+      color: #7854F7;
+      font-family: "Poppins", Sans-serif;
+      font-size: 14px;
+      line-height: 1.4em;
+      margin-bottom: 10px;
+  }
+  
+  
+  /* style for moblile */
+  @media (max-width:576px){
+  .sd_scroll {
+      height: auto;
+      overflow: auto;
+      max-height:240px;
+  }
+  
+  .thumbnail, .btnNtxt{
+      width: 100% !important;
+      display: block !important;
+  }
+  
+  }
+  /* scroll bar */
+  /* total width */
+  .sd_scroll::-webkit-scrollbar {
+      background-color:transparent;
+      width:6px;
+  }
+  
+  /* background of the scrollbar except button or resizer */
+  .sd_scroll::-webkit-scrollbar-track {
+      background-color:transparent;
+  }
+  .sd_scroll::-webkit-scrollbar-track:hover {
+      background-color:transparent;
+  }
+  
+  /* scrollbar itself */
+  .sd_scroll::-webkit-scrollbar-thumb {
+      background-color:#babac0;
+      border-radius:16px;
+      
+  }
+  .sd_scroll::-webkit-scrollbar-thumb:hover {
+      background-color:#a0a0a5;
+  }
+
+
+
+  /* COntact US */
+
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
